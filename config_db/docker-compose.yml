@@ -1,0 +1,32 @@
+version: '2'
+services:
+  postgres-db:
+    container_name: postgres-db
+    image: postgres:15
+    env_file:
+      - .env
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      -   :5432/tcp
+    networks:
+      - dwh
+  mysql-db:
+    container_name: mysql-db
+    image: mysql:8.0
+    env_file:
+      - .env
+    ports:
+      - 3307:3306/tcp
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - dwh
+volumes:
+  mysql_data: 
+    # external: true
+  postgres_data:
+    # external: true
+    
+networks:
+  dwh:
