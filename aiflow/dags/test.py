@@ -1,1 +1,0 @@
-print('hello world versi 2')

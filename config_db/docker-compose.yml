@@ -8,9 +8,9 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
-      -   :5432/tcp
+      -   5435:5432/tcp
     networks:
-      - dwh
+      - aiflow_default
   mysql-db:
     container_name: mysql-db
     image: mysql:8.0
@@ -21,7 +21,7 @@ services:
     volumes:
       - mysql_data:/var/lib/mysql
     networks:
-      - dwh
+      - aiflow_default
 volumes:
   mysql_data: 
     # external: true
@@ -29,4 +29,6 @@ volumes:
     # external: true
     
 networks:
-  dwh:
+  aiflow_default:
+    name : aiflow_default
+

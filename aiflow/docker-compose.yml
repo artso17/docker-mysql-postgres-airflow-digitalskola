@@ -12,6 +12,7 @@ x-common:
     - ./logs:/opt/airflow/logs
     - ./plugins:/opt/airflow/plugins
     - /var/run/docker.sock:/var/run/docker.sock
+  
 
 x-depends-on:
   &depends-on

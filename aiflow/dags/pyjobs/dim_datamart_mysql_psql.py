@@ -48,7 +48,6 @@ status = df.columns.copy()
 status = pd.DataFrame(status[status.str.contains('^(?!ko|na).*_')],columns=['status'])
 status[['status_name','status_detail']]=status.status.str.split('_',expand=True)
 status.index +=1
-status
 status.to_sql('dim_case',con=ps_engine,index_label='id',if_exists='replace')
 print('<===== Successfully Created Data Marts and Loaded to Postgres=====>')
 
