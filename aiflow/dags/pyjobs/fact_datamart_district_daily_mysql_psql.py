@@ -6,8 +6,8 @@ import os
 
 # %%
 # Create engines
-mysql_engine = create_engine(os.environ.get('MYSQL_CONN_STRING','mysql+mysqlconnector://root:mysql@127.0.0.1:3307/mysql'))
-ps_engine = create_engine(os.environ.get('PS_CONN_STRING','postgresql://postgres:postgres@127.0.0.1:5435/dwh'))
+mysql_engine = create_engine(os.environ.get('MYSQL_CONN_STRING'))
+ps_engine = create_engine(os.environ.get('PS_CONN_STRING'))
 
 # %%
 # Read Data from MySQL

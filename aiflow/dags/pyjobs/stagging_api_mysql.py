@@ -20,7 +20,7 @@ df.info()
 
 # %%
 # Create engine using connection string
-mysql_engine = create_engine(os.environ.get('MYSQL_CONN_STRING','mysql+mysqlconnector://root:mysql@127.0.0.1:3307/mysql'))
+mysql_engine = create_engine(os.environ.get('MYSQL_CONN_STRING'))
 
 
 # %%
