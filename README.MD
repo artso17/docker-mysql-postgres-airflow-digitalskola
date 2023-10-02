@@ -11,29 +11,29 @@ The Project aimed as final project in Data Engineer Bootcamp at Digital Skola to
 - Develop Extract and Load to MySQL Stagging Area script
 - Develop Transform and Load script to make 3 Data Marts Dimensional Tables with following specification:
   1. Province table
-    a. province_id
-    b. province_name
-  2. District table
-    a. district_id
-    b. province_id
-    c. district_name
-  3. Case table
-    a. Id
-    b. Status name (suspect, closecontact, probable, confirmation)
-    c. Status detail
+     - province_id
+     - province_name
+  1. District table
+     - district_id
+     - province_id
+     - district_name
+  2. Case table
+     - Id
+     - Status name (suspect, closecontact, probable, confirmation)
+     - Status detail
 - Develop Transform and Load script to make 2 Data Marts Fact Tables with following specification:
   1. Province Daily Table
-    a. Id (auto generate)
-    b. province_id
-    c. case_id
-    d. date
-    e. total
+     - Id (auto generate)
+     - province_id
+     - case_id
+     - date
+     - total
   2. District Daily Table
-    a. Id (auto generate)
-    b. district_id
-    c. case_id
-    d. date
-    e. total
+     - Id (auto generate)
+     - district_id
+     - case_id
+     - date
+     - total
 - Develop DAG with necessary tasks following the diagram
 - Simulate the ETL Data Pipelines process
 
