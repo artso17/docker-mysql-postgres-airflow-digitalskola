@@ -3,6 +3,9 @@
 ## Project Brief
 The Project aimed as final project in Data Engineer Bootcamp at Digital Skola to test my skills in ETL Data Pipelines end-to-end using Apache Airflow as orchestrator and scheduler, MySQL as Data Storage for Stagging Area, PostgreSQL as Data Warehouse, and all of them need to run on Docker container. Data Source retrieved from Application Programming Interface (API) and Data Warehouse has 5 Data Marts. Developing DAG with 4 tasks following the diagram below.
 
+![final_project](https://github.com/artso17/docker-flask-api-ml/assets/78079780/8e58427d-06bc-4d9d-940b-33c818e2831a)
+
+
 ## Success Criteria
 - Setup docker compose to run all tools and run it
 - Develop Extract and Load to MySQL Stagging Area script
