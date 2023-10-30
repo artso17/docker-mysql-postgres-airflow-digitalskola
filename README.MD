@@ -1,4 +1,4 @@
-# ETL Data Pipelines Using Apache Airflow-MySQL-PostgreSQL-Docker
+# ELT Data Pipelines Using Apache Airflow-MySQL-PostgreSQL-Docker
 
 ## Project Brief
 The Project aimed as final project in Data Engineer Bootcamp at Digital Skola to test my skills in ETL Data Pipelines end-to-end using Apache Airflow as orchestrator and scheduler, MySQL as Data Storage for Stagging Area, PostgreSQL as Data Warehouse, and all of them need to run on Docker container. Data Source retrieved from Application Programming Interface (API) and Data Warehouse has 5 Data Marts. Developing DAG with 4 tasks following the diagram below.
